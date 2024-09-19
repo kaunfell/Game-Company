@@ -273,7 +273,7 @@ footer{
 
 /*Third page unique*/
 .mainPage3{
-    background-image: url("/resurssit/img/bg3.png");
+    background-image: url("../../resurssit/img/bg3.png");/*REMEMBER! path is like this when uploading/(in live-server /resurssit etc works*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 40%;
