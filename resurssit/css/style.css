@@ -1,9 +1,13 @@
 body, html{
     position: relative;
     font-size: 16px;
+    background-color: rgb(23, 1, 29) !important;
 
     
 }
+
+
+
 
 :root {
     --clr-neon: hsl(317 100% 54%);
@@ -14,29 +18,35 @@ body, html{
 
 
 .navbar-brand {
+/*
     padding-left: 20px;
     height: 100px;
-    border-bottom: var(--clr-neon) 7px solid;
-    width: 380px;
-    
+    border-bottom: var(--clr-neon) 7px solid; 
+  */  
+  padding-left: 20px;
+
+  border-bottom: var(--clr-neon) 7px solid; 
+  position: relative;
+
 }
 .navbar-brand img{
 
-    height: 75px;
-    width: 80px;
+    height: 65px;
+    width: 70px;
     background-color: var(--clr-neon);
     padding:5px;
     margin-right: 15px;
     
+    
 }
 
 .navbar-brand span{
+
     color: var(--clr-neon);
     font-weight: bold;
-    font-size: 3rem;
-    position: absolute;
-    bottom: 5px;
-    
+    font-size: 2.9rem;
+    font-family: "Roboto Mono", monospace;
+   
     
 }
 .navbar-brand span{
@@ -68,10 +78,46 @@ text-shadow:
 ;
 }
 
+.theNav button{
+    background-color: var(--clr-neon);
+    
+    position: absolute;
+    right: 10px;
+    margin-top: 20px;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.9em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
 
+}
+.theNav button:hover,
+.theNav button:focus {
+  background-color: var(--clr-neon);
+  box-shadow:  0 0 5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+ 
+}
+
+
+
+
+
+.dropdown-menu li {
+   margin-right: 29px;
+}
+
+.dropdown-menu li a {
+    background-color: rgba(0, 255, 255, 0.562);
+ }
+
+
+ .dropdown:hover .dropdown-menu{
+    display: block;
+ }
 
 ul{
     padding-right: 20px;
+
+
+    
+
 }
 
 .navbar li a{
@@ -118,27 +164,46 @@ ul{
 
 .buttonContainer{
     position:absolute; 
-    top: 50px;
-    left: 19%;
-    opacity: 0.7; 
-    width: 50%;
-    height: 70%;
-    border: 2px solid green;
-  
-}
-.buttonContainer img{
-    width: 600px;
+    bottom: 0;
+
+   
+    width: 100%;
     height: 100%;
-    object-fit: contain;
-}
-.joinContainer{
-    position: absolute;
-    top:150px;
-    right: 20px;
+    
+  
+  background-image: url("../../resurssit/img/robot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px 40px;
+  
+
+  margin-bottom: 0%;
+    padding-bottom: 0%;
+
 }
 
-.buttonContainer h1{
+.joinContainer{
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    transform: translateX(-65%);
+    z-index: 5;
+    
+
+
+    font-family: "Roboto Mono", monospace;
+    box-shadow: 0px 45px 10px -15px #0a023034;    
+   
+}
+
+.buttonContainer h2{
     color: white;
+    font-size: 4rem;
+}
+
+.buttonContainer button{
+    background-color: rgb(173, 129, 218);
+    margin: 35px;
 }
 
 
@@ -226,7 +291,7 @@ video{
 
     content:'';
     /*background-image: conic-gradient(red, blue, rgb(71, 206, 71), rgb(240, 57, 247), red);*/
-    background-image: conic-gradient(from var(--angle), rgb(223, 32, 32), rgb(77, 77, 233), rgb(129, 190, 129), rgb(240, 57, 247), rgb(236, 11, 206), rgb(223, 32, 32));
+    background-image: conic-gradient(from var(--angle), rgb(223, 32, 32), rgb(77, 77, 233), rgb(211, 211, 126), rgb(129, 190, 129), rgb(240, 57, 247), rgb(236, 11, 206), rgb(223, 32, 32));
 
     position: absolute;
     z-index: -1;
@@ -253,32 +318,185 @@ video{
     opacity: 0.5;
 }
 
-footer{
+
+.container{
+    
+
+    padding-bottom: 50px;
+}
+
+.card{
+   
+}
+
+.newsContainer{
+    background-color: rgb(75, 14, 82);
+    min-height: 900px;
+}
+
+
+.news{
+    color: rgb(213, 77, 255);
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.newsContainer .card{
+    background-color: rgb(250, 245, 245);
+    z-index: 6;
+    height: 100%;
+    width: 100%;
+    color: rgb(219, 203, 219);
+}
+.card-body{
+    background-color: rgb(47, 20, 51);
+    height: 100%;
+    margin: 0px 2px 0px 2px;
+    background-color: rgb(85, 18, 119) !important;
+
+}
+.card img{
+    margin: 2px 2px 0 2px;
+    width: 98.5%;
+    height: 100%;
+}
+
+.card:before, .card::after{
+
+    content:'';
+    /*background-image: conic-gradient(red, blue, rgb(71, 206, 71), rgb(240, 57, 247), red);*/
+    background-image: conic-gradient(from var(--angle), rgb(223, 32, 32), rgb(77, 77, 233), rgb(211, 211, 126), rgb(129, 190, 129), rgb(240, 57, 247), rgb(236, 11, 206), rgb(223, 32, 32));
+
     position: absolute;
-    bottom: 0%;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  
+    animation: 3s spin linear infinite;
+    
+    
+}
+
+
+.card-footer{
+    background-color: rgb(115, 60, 145) !important;
+    margin: 0px 2px 2px 2px;
+    color: white !important;
+}
+
+footer{
+
     height: 40px;
     width: 100%;
-    background-color: blue;
+    background-color: var(--clr-neon);
+    position: absolute;
+    bottom: 0%;
    
 
 }
 
 
 
-/**Second page unique/
+
+
+
+/*SECOND page unique*/
+
+.secondPage{
+    background-image: url("../../resurssit/img/.jpg");/*REMEMBER! path is like this when uploading/(in live-server /resurssit etc works*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: 50% 40%;*/
+    height: 100%;
+    position: relative; 
+    background-color: black;
+
+}
+
+
+
+#one:hover,
+#one:focus{
+text-shadow: 
+/*
+0 0 2px rgb(186, 144, 202),
+0 0 2px rgb(186, 144, 202),
+0 0 6px rgb(186, 144, 202),
+*/
+-70px 0 60px var(--clr-neon),
+0 0 82px var(--clr-neon),
+70px 0 60px var(--clr-neon),
+0 0 102px var(--clr-neon),
+0 0 151px var(--clr-neon);
+
+;
+}
 
 
 
 
 
-/*Third page unique*/
+/*THIRD page unique*/
+
 .mainPage3{
     background-image: url("../../resurssit/img/bg3.png");/*REMEMBER! path is like this when uploading/(in live-server /resurssit etc works*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 40%;
-    height: 120vh;
+    /*background-position: 50% 40%;*/
+    height: 160vh;
+    width: 100%;
+    position: relative; 
     
 }
 
+
+#textArea{
+    resize: vertical; 
+    max-height: 400px !important;
+}
  
+
+
+
+
+/*Media queries*/
+
+@media (max-width: 450){
+    .theCarousel img{
+        object-fit: cover;
+        
+    }
+}
+
+
+@media (max-width: 768px) { 
+    ul{
+        top: 110px;
+        position: absolute;
+        
+        right: -20px;
+    }
+
+    .buttonContainer {
+        background-size: cover;
+        
+    }
+
+
+}
+
+@media (max-width: 890px) { 
+    .buttonContainer {
+        background-size: cover;
+        background-position: 68% 40px;
+        
+    }
+
+    .theCarousel{
+        background-color: red;
+        width: 95%;
+        height: 20%;
+    }
+
+
+}   

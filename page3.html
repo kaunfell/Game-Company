@@ -9,40 +9,37 @@
     </head>
     <body>
     
-    <section class="mainPage3" >
+    <section class="mainPage3 bg-dark" >
 
 
 
-<nav class="navbar navbar-expand-md " style="width: 100%;">
-  <a class="navbar-brand " href="#">
-   <img class=" rounded" src="./resurssit/img/brand.png" alt="logo">
-   <span class=" rounded">Epic Games</span>
-  </a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems">
-    <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-md theNav " style="width: 100%;">
+  <a class="navbar-brand  " href="index.html"><img class="rounded" src="./resurssit/img/brand.png" alt=""><span>EG Games</span></a>
+  <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navItems">
+    <span class="navbar-toggler-icon "></span>
   </button>
 
 <div class="ms-auto ">
-  <div class=" collapse navbar-collapse fw-bold" id="navItems">
+  <div class=" collapse navbar-collapse fw-bold " id="navItems">
     <ul class="navbar-nav ms-auto"> 
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="index.html">Home</a>
       </li>
 
-      <li class="nav-item dropdown ">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="page2.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           More
         </a>
         <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#">in progress</a></li>
-          <li><a class="dropdown-item" href="#">in progress</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">in progress</a></li>
+          <li><a class="dropdown-item" href="page2.html">Info</a></li>
+          <li><a class="dropdown-item" href="page2.html">Top performers</a></li>
+
+          <li><a class="dropdown-item" href="page2.html">Special</a></li>
         </ul>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="./page3.html">About us</a>
+        <a class="nav-link" href="page3.html">About us</a>
       </li>
     </ul>
   </div>
@@ -53,10 +50,10 @@
 
 
 
-    <div class=" row justify-content-center ">
-        <div class="header bg-transparent text-center text-secondary col-md-9 col-lg-7 mt-5 rounded">
-            <h3>About us</h3>
-            <p class="px-5 text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    <div class=" row justify-content-center">
+        <div class="header bg-transparent text-center text-secondary col-md-9 col-lg-7 mt-5  rounded">
+            <h3 class="mt-5 pt-5">About us</h3>
+            <p class="px-5  text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
@@ -79,8 +76,8 @@
                     <input type="email"
                            class="form-control mb-3"
                            placeholder="Email">
-                    <label for="textArea" class="form-label text-secondary">Write a message:</label>
-                    <textarea class="form-control" id="textArea" rows="5"></textarea>
+                    <label for="textArea" class="form-label text-secondary" >Write a message:</label>
+                    <textarea class="form-control" id="textArea" rows="7" cols="50" maxlength="800" placeholder="Max 800 characters..."></textarea>
                     <button type="submit" class="btn btn-primary my-3">Send</button>
                 </form>
             </div>
