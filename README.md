@@ -1,5 +1,6 @@
 
- 🟣# $\textsf{\color{#a832a4}{EG Games}}$ 🟣
+ # 🟣 $\textsf{\color{#a832a4}{EG Games}}$ 🟣
+
 
 ![EG Games](./resurssit/img/eg-games3.png)
 
@@ -27,4 +28,4 @@ https://kaunfell.github.io/Game-Company/
 
 
 --------------
-Images and videos are from open libraries, see more on resources.txt
+Images and videos are from open libraries, see more on [resources.txt](./resurssit/resources.txt)
