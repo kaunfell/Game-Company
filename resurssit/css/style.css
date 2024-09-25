@@ -101,15 +101,18 @@ text-shadow:
 
 .dropdown-menu li {
    margin-right: 29px;
+   
 }
 
 .dropdown-menu li a {
     background-color: rgba(0, 255, 255, 0.562);
+    
  }
 
 
  .dropdown:hover .dropdown-menu{
     display: block;
+    
  }
 
 ul{
@@ -144,12 +147,17 @@ ul{
 
 
 
+.carousel a:visited{
+    color: white  !important;
+
+}
+
 .theNav{
     
     
     position:absolute!important;
     top:0%; 
-    z-index: 2;
+    z-index: 5;
    
 }
 
@@ -174,7 +182,7 @@ ul{
   background-image: url("../../resurssit/img/robot.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0px 40px;
+  background-position: 0px 60px;
   
 
   margin-bottom: 0%;
@@ -187,12 +195,12 @@ ul{
     top: 20%;
     left: 65%;
     transform: translateX(-65%);
-    z-index: 5;
+    z-index: 3;
     
 
 
     font-family: "Roboto Mono", monospace;
-    box-shadow: 0px 45px 10px -15px #0a023034;    
+    box-shadow: 0px 55px 20px -15px #0a023034;    
    
 }
 
@@ -212,7 +220,7 @@ ul{
     position: relative; 
     width: 100%;
     height: 160vh;
-    background-color: aqua;
+    
     
     background-color: rgb(51, 156, 156);
     margin-top: 0;
@@ -264,11 +272,11 @@ video{
 
 .carousel-item {
     display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center the image horizontally */
+    justify-content: center ; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
     height: 100%; /* Ensure it takes the full height of the carousel */
     width: 100%;
-    
+   
 }
 .carousel-item img {
     width: 100%; 
@@ -276,7 +284,34 @@ video{
     object-fit: contain; 
     padding-top: 5px;
     padding-bottom: 5px;
+    
 
+
+}
+
+.carousel-caption{
+    display: flex;
+    justify-content: center;
+    font-size: 2.2em;
+    text-shadow: 2px 2px rgb(58, 51, 14);
+    font-family: "Roboto";
+    
+    
+
+   padding-bottom: 2%;
+   text-shadow: 3px 3px 3px  rgb(133, 13, 125);
+   font-weight: bold;
+
+   border-radius: 8px;
+}
+
+.carousel-caption h2 {
+    font-size: 3rem;
+}
+
+.industrial p{
+    text-shadow: 5px 5px 5px  rgb(10, 8, 1);
+    background-color: rgba(0, 0, 0, 0.096);
 
 }
 
@@ -391,6 +426,7 @@ footer{
     background-color: var(--clr-neon);
     position: absolute;
     bottom: 0%;
+    
    
 
 }
@@ -485,6 +521,9 @@ text-shadow:
 
 }
 
+
+
+
 @media (max-width: 890px) { 
     .buttonContainer {
         background-size: cover;
@@ -498,5 +537,8 @@ text-shadow:
         height: 20%;
     }
 
+    .industrial p {
+        background-color: #ffffff00;
+    }
 
 }   

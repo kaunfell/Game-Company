@@ -1,4 +1,7 @@
- 🟣 # EG Games
+
+ 🟣# $\textsf{\color{#a832a4}{EG Games}}$ 🟣
+
+![EG Games](./resurssit/img/eg-games3.png)
 
 Imaginary game company platform using Bootstrap.
 
