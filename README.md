@@ -12,7 +12,7 @@ This project represents how to:
 * nav
 * dropdown
 * multiple pages
-* collapse ( nav to hamburger icon, content under title and button [see page 2])
+* collapse
 * form 
 
 
