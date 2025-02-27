@@ -292,29 +292,43 @@ video{
 .carousel-caption{
     display: flex;
     justify-content: center;
-    font-size: 2.2em;
+    font-size: 2.3em;
     text-shadow: 2px 2px rgb(58, 51, 14);
     font-family: "Roboto";
     
     
 
    padding-bottom: 2%;
-   text-shadow: 3px 3px 3px  rgb(133, 13, 125);
+   text-shadow: 3px 3px 3px  rgb(129, 122, 129);
    font-weight: bold;
 
    border-radius: 8px;
+
+
+}
+.carousel-caption p{
+
+
+   font-size: 2.1rem;
+  
+    margin: auto;
+}
+
+.carousel-caption a{
+    color: rgb(241, 238, 245);
+    text-shadow: 5px 3px 13px  rgb(20, 17, 20);
 }
 
 .carousel-caption h2 {
     font-size: 3rem;
 }
-
+/*
 .industrial p{
     text-shadow: 5px 5px 5px  rgb(10, 8, 1);
     background-color: rgba(0, 0, 0, 0.096);
 
 }
-
+*/
 @property --angle{
     syntax: "<angle>";
     initial-value: 0deg;
