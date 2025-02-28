@@ -511,12 +511,24 @@ text-shadow:
 
 /*Media queries*/
 
+/*maybe, put px if needed*/
 @media (max-width: 450){
     .theCarousel img{
         object-fit: cover;
         
     }
+
+
 }
+@media (min-width: 450px) and (max-width: 890px){
+    .joinContainer{
+        top: 35%;
+        background-color: rgba(0, 0, 0, 0.068);
+        border-radius: 3%;
+    }
+
+}
+
 
 
 @media (max-width: 768px) { 
