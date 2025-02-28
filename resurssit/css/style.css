@@ -496,7 +496,7 @@ text-shadow:
     height: 160vh;
     width: 100%;
     position: relative; 
-    
+    background-position: top center;
 }
 
 
@@ -527,8 +527,8 @@ text-shadow:
         border-radius: 3%;
     }
 
-}
 
+}
 
 
 @media (max-width: 768px) { 
