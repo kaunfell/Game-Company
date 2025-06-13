@@ -24,7 +24,7 @@ This project represents how to:
 
 Here is the link to the page:
 
-https://kaunfell.github.io/Game-Company/
+https://fellwyn.github.io/Game-Company/
 
 
 --------------
